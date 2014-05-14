@@ -1,0 +1,66 @@
+~Title
+A D V E N T U R E S    / \
+                       | |
+                       | |
+       I N             | |
+                       | |
+                       | |
+     P H Y C           |||
+                       |||
+                   _.  |||  ._
+     L A N D       \\__|||__//
+                    \__<->__/
+                       |X|
+                       |X|
+                       ---
+
+What art thine name, knave? 
+~
+~Item
+>id>1000
+>name>The Alabaster Sword
+>key>alabaster sword
+>props>visible grabable wieldable weapon
+>visible>A sword of the whitest white lies on the ground
+>inventory>A sword of the whitest white
+>damage>5
+>speed>67
+>special>holy
+>special>tj slaying
+>weight>4
+>description>The sword's hilt is made of a gleaming pearlescent material that is smooth and cold to the touch. The blade appears to be a magically fortified crystalline quartz, laced with an elaborate opaque pattern.
+~
+~Mob
+>id>1000
+>name>The Thomas J
+>key>tj thomas mustard
+>props>visible
+>description>TJ sits at his desk, working something fierce.
+>hp>45
+>damage>3
+>speed>
+~
+~Room
+>id>1000
+>name>Gilbert 354
+>description>You stand inside of a glum cubicle farm, the air thick with the smell of acrid coffee. You pause and think for a moment, "Where's Maduka?" You figure he must be off somewhere, teaching.
+>doors>hall-1001
+>mobs>1000
+~
+~Room
+>id>1001
+>name>Gilbert, 3rd Floor Hallway
+>description>You stand in the hallway at the south end of Gilbert. To the east is the breezeway to the annex. Undergrads block the hallway to the north. It appears the little bastards are sitting on the floor while they're waiting for someone's office hours. The south door to the stairwell appears to be stuck. Perhaps someone should call facilities?
+>exits>east-1002
+>doors>354-1000 355-1003
+~
+~Room
+>id>1002
+>name>Breezeway to Chem Annex
+>description>You stand in a breezeway that used to connect Gilbert hall to the Chemistry Annex. However, it would seem that shoddy construction has taken its toll - the breezeway is collapsed to the east, barring further progression.
+>exits> west-1001
+~Room
+>id>1003
+>name>Gilbert 355
+>description>You stand in an open room, the outer edges lined by desks covered in junk. The delicate smell of farts hangs lightly in the air.
+>doors>hall-1001
