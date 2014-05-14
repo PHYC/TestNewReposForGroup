@@ -62,7 +62,7 @@ class Game(object):
       self.displayRoom()
     elif command == 'ls':
       self.displayRoom()
-      print enshorten('An ethereal voice speaks, "Okay, I got what you meant, but next time use the command \'look.\' Jackass."')
+      print enshorten('An ethereal voice speaks, "Okay, I got what you meant, but next time use the \'look\' command. Jackass."')
     elif command == 'enter':
       if args in self.getRoom().doors:
         self.switchRoom(self.getRoom().doors[args])
