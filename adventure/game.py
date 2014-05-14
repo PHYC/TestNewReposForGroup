@@ -1,18 +1,20 @@
 #external modules
 from time import sleep
 from random import shuffle
+from os import system
 
 #internal modules
 from data import GameData
 from parser import enshorten
+import constants
 
-from constants import TICK,SCREENWIPE
 directions=['north','east','south','west']
 confusions=['Come again?','Say what now?','Huh?','Whuttawut?','Try again.','Use your WORDS.',"Not followin' ya..."]
+
 def play():
   game = Game()
   while (game.playing):
-    sleep(TICK)
+    sleep(constants.TICK)
     game.update()
 
 class Game(object):
@@ -26,8 +28,7 @@ class Game(object):
     self.data = GameData('adventure/game.dat')
 
   def screenWipe(self):
-    for _ in range(SCREENWIPE):
-      print ""
+    system('clear')
 
   def displayTitle(self):
     self.playerName = raw_input(self.data.title+'>> ')
