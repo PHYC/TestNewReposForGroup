@@ -43,24 +43,38 @@ What art thine name, knave?
 ~Room
 >id>1000
 >name>Gilbert 354
->description>You stand inside of a glum cubicle farm, the air thick with the smell of acrid coffee. You pause and think for a moment, "Where's Maduka?" You figure he must be off somewhere, teaching.
+>environ>Office
+>description>You stand inside of a glum cubicle farm, the air thick with the smell of acrid coffee. You pause for a moment and think, "Where's Maduka?" You figure he must be off somewhere teaching or something.
 >doors>hall-1001
 >mobs>1000
 ~
 ~Room
 >id>1001
->name>Gilbert, 3rd Floor Hallway
->description>You stand in the hallway at the south end of Gilbert. To the east is the breezeway to the annex. Undergrads block the hallway to the north. It appears the little bastards are sitting on the floor while they're waiting for someone's office hours. The south door to the stairwell appears to be stuck. Perhaps someone should call facilities?
+>name>Gilbert Hall, 3rd Floor
+>environ>Hallway
+>description>You stand in the hallway at the south end of Gilbert. To the east is the breezeway to the annex. Undergrads block the hallway to the north. It appears the little punks are sitting on the floor while they're waiting for someone's office hours. The south door to the stairwell appears to be stuck. Perhaps someone should call facilities?
 >exits>east-1002
 >doors>354-1000 355-1003
 ~
 ~Room
 >id>1002
 >name>Breezeway to Chem Annex
+>environ>Hallway
 >description>You stand in a breezeway that used to connect Gilbert hall to the Chemistry Annex. However, it would seem that shoddy construction has taken its toll - the breezeway is collapsed to the east, barring further progression.
->exits> west-1001
+>exits>west-1001
+~
 ~Room
 >id>1003
 >name>Gilbert 355
->description>You stand in an open room, the outer edges lined by desks covered in junk. The delicate smell of farts hangs lightly in the air.
+>environ>Office
+>description>You stand in a room with a large open center. Its outer edges are lined with desks, most of which are covered in junk. The delicate smell of farts hangs lightly in the air.
+>exits>norwidgens-1004
 >doors>hall-1001
+~
+~Room
+>id>1004
+>name>The Norwidden End of Gilbert 355
+>environ>Greeble
+>description>You seem to have gone in a made-up direction. That's just silly.
+>exits>sodwidgens-1003
+~

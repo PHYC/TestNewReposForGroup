@@ -1,4 +1,4 @@
-from parser import parse
+from parser import parse,enshorten
 
 class Room(object):
   def __init__(self,data):
@@ -8,7 +8,8 @@ class Room(object):
                 'doors':self.setDoors,
                 'exits':self.setExits,
                 'items':self.setItems,
-                'mobs':self.setMobs}
+                'mobs':self.setMobs,
+                'environ':self.setEnviron}
     self.loadDefaults()
     self.readData(data)
     print "Read new room, ID: "+str(self.id)
@@ -21,6 +22,7 @@ class Room(object):
     self.exits={}
     self.items=[]
     self.mobs=[]
+    self.environ='Void'
 
   def readData(self,data):
     line=data.pop(0)
@@ -32,14 +34,14 @@ class Room(object):
         print "------------------------------------------"
         print "WARNING: ROOM CONTAINS UNMAPPABLE PROPERTY"
         print "---- room id: "+str(self.id)+" --- property: "+vals[0]+" ----"
-        raise
+        raise BaseException
       line=data.pop(0)
 
   def setID(self,id):
     self.id = int(id)
 
   def setName(self,name):
-    self.name = name
+    self.name=name
 
   def setDescription(self,desc):
     self.description=desc
@@ -59,4 +61,33 @@ class Room(object):
 
   def setMobs(self,mobs):
     self.mobs=map(int,mobs.split())
+
+  def setEnviron(self,environ):
+    self.environ=environ
+
+  def display(self):
+    print enshorten('[ '+self.name+']  { Environment: '+self.environ+'}')
+    print '  '+enshorten(self.description)
+    self.printItems()
+    self.printMobs()
+    self.printGroup(" Exits: ",self.doors.keys(),'')
+    self.printGroup(" The area continues to the ",self.exits.keys(),'.')
+
+  def printItems(self):
+    a=1
+
+  def printMobs(self):
+    a=1
+
+  def printGroup(self,line,group,cap):
+    if (len(group) == 1):
+      print line+group[0]+cap
+    elif (len(group) == 2):
+      print line+' and '.join(group)+cap
+    elif (len(group) > 2):
+      string=', '.join(group[0:-2])
+      string+=' and '+group[-1]
+      print line+string+cap
+    if (len(group) != 0):
+      print ""
 
