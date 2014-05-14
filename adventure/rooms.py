@@ -66,7 +66,7 @@ class Room(object):
     self.environ=environ
 
   def display(self):
-    print enshorten('[ '+self.name+']  { Environment: '+self.environ+'}')
+    print enshorten("\033[1m"+'[ '+self.name+']  { Environment: '+self.environ+'}'+"\033[0m")
     print '  '+enshorten(self.description)
     self.printItems()
     self.printMobs()
