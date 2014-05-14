@@ -54,7 +54,7 @@ What art thine name, knave?
 >name>Gilbert Hall, 3rd Floor
 >environ>Hallway
 >description>You stand in the hallway at the south end of Gilbert Hall. To the east is the breezeway to the annex. Undergrads block the hallway to the north. It appears the little punks are sitting on the floor while they're waiting for someone's office hours. The south door to the stairwell appears to be stuck. Perhaps someone should call facilities?
->exits>east-1002
+>exits>north-1005 east-1002 south-1006
 >doors>354-1000 355-1003
 ~
 ~Room
@@ -78,4 +78,18 @@ What art thine name, knave?
 >environ>Greeble
 >description>You seem to have gone in a made-up direction. That's just silly.
 >exits>sodwidgens-1003
+~
+~Room
+>id>1005
+>name>Gilbert Hall, 3rd Floor
+>environ>Hallway
+>description>You stand in the hallway on the south wing of Gilbert Hall. You gingerly step and pick your way through children who sit on the floor, awaiting the start of office hours.
+>exits>south-1001
+~
+~Room
+>id>1006
+>name>Gilbert Hall, 3rd Floor
+>environ>Stairwell
+>description>You stand at the top of the south stairwell. Below you, a fire rages and blocks your way.
+>exits>north-1001
 ~

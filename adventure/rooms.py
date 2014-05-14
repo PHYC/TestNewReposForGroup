@@ -79,14 +79,14 @@ class Room(object):
   def printMobs(self):
     a=1
 
-  def printGroup(self,line,group,cap):
+  def printGroup(self,line,group,cap=''):
     if (len(group) == 1):
       print line+group[0]+cap
     elif (len(group) == 2):
       print line+' and '.join(group)+cap
     elif (len(group) > 2):
-      string=', '.join(group[0:-2])
-      string+=' and '+group[-1]
+      string=', '.join(group[0:-1])
+      string+=', and '+group[-1]
       print line+string+cap
     if (len(group) != 0):
       print ""
