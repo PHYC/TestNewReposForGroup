@@ -51,9 +51,9 @@ class Game(object):
     if len(line) == 0:
       command = 'foo'
     else:
-      command = line.split()[0]
+      command = line.split()[0].lower()
       if len(line.split()) > 1:
-        args = line.split()[1]
+        args = line.split()[1].lower()
       else:
         args = ''
     if command == 'quit':
@@ -63,6 +63,8 @@ class Game(object):
     elif command == 'enter':
       if args in self.getRoom().doors:
         self.switchRoom(self.getRoom().doors[args])
+      elif args == 'sandman':
+        print "Yes, very clever.\n"
       else:
         print "You'll have to specify a valid exit...\n"
     elif command == 'help':

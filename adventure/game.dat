@@ -19,8 +19,8 @@ What art thine name, knave?
 ~Item
 >id>1000
 >name>The Alabaster Sword
->key>alabaster sword
->props>visible grabable wieldable weapon
+>key>alabaster sword white
+>props>visible grabable wieldable weaponable
 >visible>A sword of the whitest white lies on the ground
 >inventory>A sword of the whitest white
 >damage>5
@@ -35,16 +35,17 @@ What art thine name, knave?
 >name>The Thomas J
 >key>tj thomas mustard
 >props>visible
->description>TJ sits at his desk, working something fierce.
+>visible>TJ sits at his desk, working something fierce.
 >hp>45
 >damage>3
->speed>
+>speed>50
+>description>You see the infamous Thomas J. He sits at his desk, headphones in, slowly bopping his head to some transcendental theme. He stares intently at his several monitors. One of them displays a bash shell, with god-awful green text on black background that burns into your soul. The other displays his e-mail program, with a small window hovering over it playing the movie "Iron Man." How can he possibly focus on his work like that?
 ~
 ~Room
 >id>1000
 >name>Gilbert 354
 >environ>Office
->description>You stand inside of a glum cubicle farm, the air thick with the smell of acrid coffee. You pause for a moment and think, "Where's Maduka?" You figure he must be off somewhere teaching or something.
+>description>You within a glum cubicle farm, the air thick with the smell of acrid coffee. You pause for a moment and think, "Where's Maduka?" You figure he must be off somewhere teaching or something.
 >doors>hall-1001
 >mobs>1000
 ~
@@ -52,7 +53,7 @@ What art thine name, knave?
 >id>1001
 >name>Gilbert Hall, 3rd Floor
 >environ>Hallway
->description>You stand in the hallway at the south end of Gilbert. To the east is the breezeway to the annex. Undergrads block the hallway to the north. It appears the little punks are sitting on the floor while they're waiting for someone's office hours. The south door to the stairwell appears to be stuck. Perhaps someone should call facilities?
+>description>You stand in the hallway at the south end of Gilbert Hall. To the east is the breezeway to the annex. Undergrads block the hallway to the north. It appears the little punks are sitting on the floor while they're waiting for someone's office hours. The south door to the stairwell appears to be stuck. Perhaps someone should call facilities?
 >exits>east-1002
 >doors>354-1000 355-1003
 ~
@@ -60,7 +61,7 @@ What art thine name, knave?
 >id>1002
 >name>Breezeway to Chem Annex
 >environ>Hallway
->description>You stand in a breezeway that used to connect Gilbert hall to the Chemistry Annex. However, it would seem that shoddy construction has taken its toll - the breezeway is collapsed to the east, barring further progression.
+>description>You stand in a breezeway that used to connect Gilbert hall to the Chemistry Annex. However, it would seem thatits shoddy construction has finally taken its toll - the breezeway is collapsed to the east, barring further progression.
 >exits>west-1001
 ~
 ~Room
